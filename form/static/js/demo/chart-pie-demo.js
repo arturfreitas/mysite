@@ -5,14 +5,15 @@ Chart.defaults.global.defaultFontColor = '#858796';
 // Pie Chart Example
 var qualityChart = document.getElementById("qualityChart");
 //var performanceChart = document.getElementById("performanceChart");
-var availabilityChart = document.getElementById("availabilityChart");
+//var availabilityChart = document.getElementById("availabilityChart");
 
 var myPieChart = new Chart(qualityChart, {
   type: 'doughnut',
   data: {
-    labels: ["Direct", "Referral", "Social"],
+    labels: ["Red","Blue"],
     datasets: [{
-      data: [55, 30, 15],
+      label = "Gauge",
+      data: [10,190],
       backgroundColor: ['#4e73df', '#1cc88a', '#36b9cc'],
       hoverBackgroundColor: ['#2e59d9', '#17a673', '#2c9faf'],
       hoverBorderColor: "rgba(234, 236, 244, 1)",
